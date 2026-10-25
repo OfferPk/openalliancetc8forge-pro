@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)" />
+
+  <!-- Window Header -->
+  <rect x="30" y="30" width="1140" height="60" rx="8" fill="#1f2937" />
+  <circle cx="60" cy="60" r="7" fill="#ef4444" />
+  <circle cx="85" cy="60" r="7" fill="#f59e0b" />
+  <circle cx="110" cy="60" r="7" fill="#10b981" />
+
+  <text x="145" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold">OPENAllianceTC8Forge Pro — Automotive Ethernet ECU Conformance Studio</text>
+  <rect x="980" y="45" width="170" height="30" rx="4" fill="url(#accentGrad)" />
+  <text x="995" y="65" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">TC8 v3.0 CERTIFIED</text>
+
+  <!-- Main Grid Layout -->
+  <!-- Left Panel: Test Suite Matrix -->
+  <rect x="30" y="110" width="680" height="580" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  <text x="50" y="145" fill="#f3f4f6" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">TC8 Normative Test Suite Matrix</text>
+  <rect x="520" y="130" width="170" height="22" rx="4" fill="#064e3b" />
+  <text x="532" y="146" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">10/10 SUITES VERIFIED</text>
+
+  <!-- Table Rows -->
+  <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">
+    <!-- Header -->
+    <rect x="50" y="165" width="640" height="30" fill="#1f2937" />
+    <text x="60" y="185" fill="#9ca3af" font-weight="bold">TEST ID</text>
+    <text x="210" y="185" fill="#9ca3af" font-weight="bold">LAYER</text>
+    <text x="310" y="185" fill="#9ca3af" font-weight="bold">STANDARD CLAUSE</text>
+    <text x="590" y="185" fill="#9ca3af" font-weight="bold">VERDICT</text>
+
+    <!-- Row 1 -->
+    <rect x="50" y="200" width="640" height="42" fill="#161f30" />
+    <text x="60" y="226" fill="#60a5fa" font-family="monospace">TC8_L2_MAC_01</text>
+    <text x="210" y="226" fill="#d1d5db">Layer 2 (MAC)</text>
+    <text x="310" y="226" fill="#9ca3af">TC8 Sec 4.1 MAC Filtering</text>
+    <text x="605" y="226" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 2 -->
+    <rect x="50" y="247" width="640" height="42" fill="#111827" />
+    <text x="60" y="273" fill="#60a5fa" font-family="monospace">TC8_L2_VLAN_02</text>
+    <text x="210" y="273" fill="#d1d5db">Layer 2 (VLAN)</text>
+    <text x="310" y="273" fill="#9ca3af">IEEE 802.1Q PCP 0-7 Queuing</text>
+    <text x="605" y="273" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 3 -->
+    <rect x="50" y="294" width="640" height="42" fill="#161f30" />
+    <text x="60" y="320" fill="#60a5fa" font-family="monospace">TC8_L3_ARP_01</text>
+    <text x="210" y="320" fill="#d1d5db">Layer 3 (ARP)</text>
+    <text x="310" y="320" fill="#9ca3af">TC8 Sec 5.1 Cache Age-Out</text>
+    <text x="605" y="320" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 4 -->
+    <rect x="50" y="341" width="640" height="42" fill="#111827" />
+    <text x="60" y="367" fill="#60a5fa" font-family="monospace">TC8_L3_IPV4_01</text>
+    <text x="210" y="367" fill="#d1d5db">Layer 3 (IPv4)</text>
+    <text x="310" y="367" fill="#9ca3af">IHL &amp; Checksum Verification</text>
+    <text x="605" y="367" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 5 -->
+    <rect x="50" y="388" width="640" height="42" fill="#161f30" />
+    <text x="60" y="414" fill="#60a5fa" font-family="monospace">TC8_L3_ICMP_01</text>
+    <text x="210" y="414" fill="#d1d5db">Layer 3 (ICMP)</text>
+    <text x="310" y="414" fill="#9ca3af">Echo Reply &amp; Rate Limiting</text>
+    <text x="605" y="414" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 6 -->
+    <rect x="50" y="435" width="640" height="42" fill="#111827" />
+    <text x="60" y="461" fill="#60a5fa" font-family="monospace">TC8_L4_UDP_01</text>
+    <text x="210" y="461" fill="#d1d5db">Layer 4 (UDP)</text>
+    <text x="310" y="461" fill="#9ca3af">RFC 768 Zero-Checksum</text>
+    <text x="605" y="461" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 7 -->
+    <rect x="50" y="482" width="640" height="42" fill="#161f30" />
+    <text x="60" y="508" fill="#60a5fa" font-family="monospace">TC8_L4_TCP_01</text>
+    <text x="210" y="508" fill="#d1d5db">Layer 4 (TCP)</text>
+    <text x="310" y="508" fill="#9ca3af">RFC 793 3-Way Handshake &amp; MSS</text>
+    <text x="605" y="508" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 8 -->
+    <rect x="50" y="529" width="640" height="42" fill="#111827" />
+    <text x="60" y="555" fill="#60a5fa" font-family="monospace">TC8_L5_SOMEIP_01</text>
+    <text x="210" y="555" fill="#d1d5db">Layer 5 (SOME/IP)</text>
+    <text x="310" y="555" fill="#9ca3af">AUTOSAR RPC &amp; Return Codes</text>
+    <text x="605" y="555" fill="#10b981" font-weight="bold">PASS</text>
+
+    <!-- Row 9 -->
+    <rect x="50" y="576" width="640" height="42" fill="#161f30" />
+    <text x="60" y="602" fill="#60a5fa" font-family="monospace">TC8_ROBUST_01</text>
+    <text x="210" y="602" fill="#d1d5db">Robustness</text>
+    <text x="310" y="602" fill="#9ca3af">Broadcast Storm &amp; Latency</text>
+    <text x="605" y="602" fill="#10b981" font-weight="bold">PASS</text>
+  </g>
+
+  <!-- Right Upper Panel: Packet Dissector -->
+  <rect x="730" y="110" width="440" height="260" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  <text x="750" y="145" fill="#f3f4f6" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">Automotive Ethernet Frame Dissector</text>
+  <rect x="750" y="165" width="400" height="185" rx="6" fill="#090d16" stroke="#1f2937" stroke-width="1" />
+  <text x="765" y="195" fill="#a7f3d0" font-family="monospace" font-size="11">DST MAC: 02:00:00:10:20:30 (ECU Unicast)</text>
+  <text x="765" y="215" fill="#a7f3d0" font-family="monospace" font-size="11">SRC MAC: 02:00:00:40:50:60 (Tester Node)</text>
+  <text x="765" y="235" fill="#60a5fa" font-family="monospace" font-size="11">VLAN: VID=100, PCP=5, DEI=0 (802.1Q Tagged)</text>
+  <text x="765" y="255" fill="#f472b6" font-family="monospace" font-size="11">IPv4: 192.168.1.10 -&gt; 192.168.1.20 (TTL=64)</text>
+  <text x="765" y="275" fill="#fbbf24" font-family="monospace" font-size="11">L4 Protocol: UDP (SrcPort=30490, DstPort=30490)</text>
+  <text x="765" y="295" fill="#34d399" font-family="monospace" font-size="11">SOME/IP: ServiceID=0x1234, MethodID=0x0001</text>
+  <text x="765" y="315" fill="#9ca3af" font-family="monospace" font-size="10">Frame Length: 68 Octets | Checksum Valid: TRUE</text>
+
+  <!-- Right Lower Panel: Normative Auditor -->
+  <rect x="730" y="390" width="440" height="300" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  <text x="750" y="425" fill="#f3f4f6" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">10-Point Normative Auditor Scorecard</text>
+  <rect x="750" y="445" width="400" height="40" rx="6" fill="#064e3b" />
+  <text x="765" y="470" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="bold">COMPLIANCE SCORE: 100.0% (CERTIFIED)</text>
+
+  <!-- Audit Checklist items -->
+  <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">
+    <text x="760" y="510" fill="#10b981">✓</text>
+    <text x="780" y="510" fill="#d1d5db">Gate 1: MAC Ingress Discrimination (TC8 Sec 4.1.2)</text>
+    
+    <text x="760" y="535" fill="#10b981">✓</text>
+    <text x="780" y="535" fill="#d1d5db">Gate 2: IEEE 802.1Q Priority PCP 0-7 (TC8 Sec 4.2.1)</text>
+
+    <text x="760" y="560" fill="#10b981">✓</text>
+    <text x="780" y="560" fill="#d1d5db">Gate 3: ARP Cache Age-Out &amp; Resolution (TC8 Sec 5.1.4)</text>
+
+    <text x="760" y="585" fill="#10b981">✓</text>
+    <text x="780" y="585" fill="#d1d5db">Gate 4: IPv4 Header &amp; Checksum Drop (TC8 Sec 5.2.2)</text>
+
+    <text x="760" y="610" fill="#10b981">✓</text>
+    <text x="780" y="610" fill="#d1d5db">Gate 5: SOME/IP RPC &amp; SD Handshake (TC8 Sec 7.1.1)</text>
+
+    <text x="760" y="635" fill="#10b981">✓</text>
+    <text x="780" y="635" fill="#d1d5db">Gate 6: 100/1000BASE-T1 Storm Recovery (TC8 Sec 8.1.3)</text>
+
+    <text x="760" y="660" fill="#9ca3af" font-style="italic">4 Additional Clauses Fully Satisfied (10/10 Normative Passed)</text>
+  </g>
+</svg>
